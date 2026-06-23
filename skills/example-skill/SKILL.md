@@ -33,6 +33,13 @@ Do not use this skill when:
 - the user asks for unstructured brainstorming only
 - evidence cannot be assessed and the user needs high-stakes advice
 
+## Handoffs
+
+- Hand off explicitly when another skill owns the main decision.
+- State why the handoff is needed and which part of the request this skill can
+  still handle.
+- Do not silently answer outside the skill boundary.
+
 ## Mandatory Rules
 
 - Read relevant reference files before applying their method.
@@ -42,6 +49,8 @@ Do not use this skill when:
 - Prefer concise structured outputs over long prose.
 - Do not invent standards, citations, or source claims.
 - Ask a question only when missing input blocks meaningful progress.
+- If required input is missing and the result would be misleading, mark the
+  blocker instead of inventing the answer.
 
 ## Inputs Expected
 

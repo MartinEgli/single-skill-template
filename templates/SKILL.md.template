@@ -22,12 +22,22 @@ Define the purpose of this skill.
 
 - Another specialized skill matches better.
 - The user asks for a simple direct answer.
+- The task needs accountable approval outside this skill boundary.
+
+## Handoffs
+
+- Hand off explicitly when another skill owns the main decision.
+- State why the handoff is needed and which part of the request remains in this
+  skill.
+- Do not silently answer outside this skill's boundary.
 
 ## Mandatory Rules
 
 - Preserve user-provided facts, names, paths, commands, and error strings.
 - Separate evidence from inference.
 - State assumptions when they affect the result.
+- If required input is missing and the result would be misleading, mark the
+  blocker instead of inventing the answer.
 
 ## Inputs Expected
 
