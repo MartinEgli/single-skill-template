@@ -43,6 +43,13 @@ fs.writeFileSync(
   )
 );
 fs.writeFileSync(
+  path.join(target, "references", "evidence-traceability.md"),
+  fs.readFileSync(
+    path.join(root, "skills", "example-skill", "references", "evidence-traceability.md"),
+    "utf8"
+  )
+);
+fs.writeFileSync(
   path.join(target, "references", "terminology.md"),
   fs.readFileSync(
     path.join(root, "skills", "example-skill", "references", "terminology.md"),

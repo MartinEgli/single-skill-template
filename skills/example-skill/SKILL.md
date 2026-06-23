@@ -46,6 +46,8 @@ Do not use this skill when:
 - Preserve user-provided facts, names, paths, commands, and error strings.
 - Separate evidence from inference.
 - State assumptions when they affect the result.
+- Keep important findings and recommendations traceable to supplied inputs,
+  referenced sources, tool results, or clearly marked assumptions.
 - Prefer concise structured outputs over long prose.
 - Do not invent standards, citations, or source claims.
 - Ask a question only when missing input blocks meaningful progress.
@@ -89,6 +91,7 @@ Run a final quality pass against the quality gates. Highlight blockers first.
 ## Evidence Handling
 
 Use `references/evidence-discipline.md`.
+Use `references/evidence-traceability.md`.
 
 Required distinction:
 
@@ -110,6 +113,7 @@ Use assets when the user asks for structured output:
 Before final answer, check:
 
 - output matches requested mode
+- important claims include source trace or are marked as assumptions
 - assumptions are visible
 - evidence and inference are separated
 - no placeholder markers remain

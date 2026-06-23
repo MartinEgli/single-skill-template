@@ -36,6 +36,8 @@ Define the purpose of this skill.
 - Preserve user-provided facts, names, paths, commands, and error strings.
 - Separate evidence from inference.
 - State assumptions when they affect the result.
+- Keep important findings and recommendations traceable to supplied inputs,
+  referenced sources, tool results, or clearly marked assumptions.
 - If required input is missing and the result would be misleading, mark the
   blocker instead of inventing the answer.
 
@@ -67,6 +69,7 @@ Run final quality gates.
 ## Evidence Handling
 
 Use `references/evidence-discipline.md`.
+Use `references/evidence-traceability.md`.
 
 ## Output Contracts
 
@@ -76,6 +79,7 @@ Use assets when structured output helps.
 
 - Output matches requested mode.
 - Evidence and inference are separated.
+- Important claims include source trace or are marked as assumptions.
 - Assumptions are visible.
 - Boundaries are respected.
 
