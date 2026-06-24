@@ -1,3 +1,5 @@
 display_name: {{title}}
 short_description: Focused workflow for {{title}}.
+icon_small: ./assets/{{name}}-small.svg
+icon_large: ./assets/{{name}}.svg
 default_prompt: Use {{name}} to handle focused {{title}} work with evidence, boundaries, and quality gates.

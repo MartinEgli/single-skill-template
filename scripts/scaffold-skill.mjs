@@ -86,6 +86,8 @@ fs.writeFileSync(
     "utf8"
   )
 );
+fs.writeFileSync(path.join(target, "assets", `${name}.svg`), template("skill-icon.svg.template"));
+fs.writeFileSync(path.join(target, "assets", `${name}-small.svg`), template("skill-icon-small.svg.template"));
 fs.writeFileSync(path.join(target, "examples", "example-run.md"), template("example-run.md.template"));
 
 console.log(`Created ${path.relative(root, target)}`);
