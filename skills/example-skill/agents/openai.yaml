@@ -1,0 +1,3 @@
+display_name: Example Skill
+short_description: Structured example workflow for focused skills.
+default_prompt: Use example-skill to plan, review, build, or final-check a focused workflow with evidence, boundaries, and quality gates.

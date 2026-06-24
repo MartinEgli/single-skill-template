@@ -31,9 +31,11 @@ function template(file) {
 fs.mkdirSync(path.join(target, "references"), { recursive: true });
 fs.mkdirSync(path.join(target, "assets"), { recursive: true });
 fs.mkdirSync(path.join(target, "examples"), { recursive: true });
+fs.mkdirSync(path.join(target, "agents"), { recursive: true });
 
 fs.writeFileSync(path.join(target, "SKILL.md"), template("SKILL.md.template"));
 fs.writeFileSync(path.join(target, "README.md"), template("skill-README.md.template"));
+fs.writeFileSync(path.join(target, "agents", "openai.yaml"), template("openai.yaml.template"));
 fs.writeFileSync(path.join(target, "references", "method.md"), template("method.md.template"));
 fs.writeFileSync(
   path.join(target, "references", "evidence-discipline.md"),

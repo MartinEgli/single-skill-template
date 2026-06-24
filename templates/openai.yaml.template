@@ -1,0 +1,3 @@
+display_name: {{title}}
+short_description: Focused workflow for {{title}}.
+default_prompt: Use {{name}} to handle focused {{title}} work with evidence, boundaries, and quality gates.

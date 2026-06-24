@@ -112,6 +112,18 @@ function validateSkill(skillDir) {
     }
   }
 
+  const openaiMetadata = path.join(skillDir, "agents", "openai.yaml");
+  if (!fs.existsSync(openaiMetadata)) {
+    fail(`${skillName}: missing agents/openai.yaml`);
+  } else {
+    const metadata = read(openaiMetadata);
+    for (const field of ["display_name", "short_description", "default_prompt"]) {
+      if (!new RegExp(`^${field}:\\s*\\S`, "m").test(metadata)) {
+        fail(`${skillName}: agents/openai.yaml missing ${field}`);
+      }
+    }
+  }
+
   const referenceDir = path.join(skillDir, "references");
   if (fs.existsSync(referenceDir)) {
     for (const file of walk(referenceDir)) {
