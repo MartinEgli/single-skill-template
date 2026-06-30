@@ -69,3 +69,10 @@ See [INSTALL.md](INSTALL.md).
 ## Maintain
 
 See [CLAUDE.md](CLAUDE.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Continuous Improvement
+
+This skill supports an explicit feedback loop. Use /example-skill feedback to
+capture lessons and /example-skill improve to propose changes. Improvements must
+remain traceable, validated, committed on a feature branch, and pushed before
+they become part of the released skill behavior.
