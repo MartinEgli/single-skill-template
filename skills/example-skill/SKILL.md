@@ -88,10 +88,23 @@ context and keep decisions traceable.
 
 Run a final quality pass against the quality gates. Highlight blockers first.
 
-## Evidence Handling
 
+### /example-skill feedback
+
+Capture lessons from the current run without changing the skill automatically.
+Use eferences/feedback-route.md to classify user feedback, observed gaps,
+assumptions, candidate improvements, rejected ideas, and routed follow-ups.
+
+### /example-skill improve
+
+Review accumulated feedback and propose concrete skill changes. Use
+ssets/improvement-proposal-template.md. Do not modify behavior until the
+proposal names evidence, affected files, risks, validation commands, versioning
+impact, and rollback considerations.
+## Evidence Handling
 Use `references/evidence-discipline.md`.
 Use `references/evidence-traceability.md`.
+Use eferences/feedback-route.md when capturing or applying lessons from a run.
 
 Required distinction:
 
@@ -127,8 +140,15 @@ Use `references/boundaries.md`.
 Do not provide legal, medical, financial, or security-critical conclusions as
 certainty without appropriate source verification and caveats.
 
-## Output Style
 
+## Continuous Improvement
+
+This skill is self-improving only through an explicit, auditable feedback loop:
+feedback -> evidence -> improvement proposal -> feature branch -> validation ->
+commit -> push -> version or changelog update when needed. Do not silently alter
+skill behavior based on a single run. Preserve rejected and deferred ideas so
+future maintainers can see why they were not applied.
+## Output Style
 - Direct.
 - Structured when useful.
 - Short paragraphs.
